@@ -9,13 +9,10 @@ using Dsw2026Ej11.Domain;
 public class CasoList
 {
     public List<Alumno> ListAlumnos { get; }
-
     public CasoList() => ListAlumnos = new List<Alumno>();
 
-    public void AgregarAlumno(Alumno alumno)
-    {
-        ListAlumnos.Add(alumno);
-    }
+    public void AgregarAlumno(Alumno alumno)=>ListAlumnos.Add(alumno);
+    
 
     public Alumno? BuscarPorNombre(string nombre) => ListAlumnos.Find(alumno => alumno.Nombre == nombre);
 
